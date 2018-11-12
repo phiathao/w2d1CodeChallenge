@@ -12,7 +12,7 @@ function createDiv(){
     clickCounter ++;
     $(this).parent().append(`
     <div class="divClass" data-tnf="1">
-        <p>${clickCounter}<p>
+        <p>${clickCounter}</p>
         <button class="changeColor">Swap</button>
         <button class="deleteDiv">Delete</button>
     </div>`);
