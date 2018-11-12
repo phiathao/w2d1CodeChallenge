@@ -1,15 +1,11 @@
-console.log('js');
-
 let clickCounter = 0 ;
 
 $(document).ready(readyJQ);
 
 function readyJQ() {
-    console.log('jQ rdy');
     $('#btnGenerate').on('click', createDiv);
     $('#btnGenerate').parent().on('click', '.changeColor', changeColorFn);
     $('#btnGenerate').parent().on('click', '.deleteDiv', deleteDiv);
-
 }
 
 function createDiv(){
@@ -21,12 +17,9 @@ function createDiv(){
         <button class="deleteDiv">Delete</button>
     </div>`);
 }
-    // button is inside
+
 function changeColorFn(){
-    
-    console.log('in Change Color');
     if ($(this).closest('.divClass').data('tnf') == '1'){
-        console.log('is clicked');
         $(this).closest('.divClass').css('background-color', 'yellow');
         $(this).closest('.divClass').data('tnf', '0');
     } else if ($(this).closest('.divClass').data('tnf') == '0'){
