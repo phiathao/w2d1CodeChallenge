@@ -29,5 +29,5 @@ function changeColorFn(){
 }
 
 function deleteDiv(){
-    $(this).parent().parent().remove()
+    $(this).parent().remove()
 }
