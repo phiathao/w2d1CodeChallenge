@@ -21,17 +21,17 @@ function createDiv(){
         <button class="deleteDiv">Delete</button>
     </div>`);
 }
-
+    // button is inside
 function changeColorFn(){
     
     console.log('in Change Color');
-    if ($(this).parent().parent().data('tnf') == '1'){
+    if ($(this).closest('.divClass').data('tnf') == '1'){
         console.log('is clicked');
-        $(this).parent().parent().css('background-color', 'yellow');
-        $(this).parent().parent().data('tnf', '0');
-    } else if ($(this).parent().parent().data('tnf') == '0'){
-        $(this).parent().parent().css('background-color', 'red');
-        $(this).parent().parent().data('tnf', '1');
+        $(this).closest('.divClass').css('background-color', 'yellow');
+        $(this).closest('.divClass').data('tnf', '0');
+    } else if ($(this).closest('.divClass').data('tnf') == '0'){
+        $(this).closest('.divClass').css('background-color', 'red');
+        $(this).closest('.divClass').data('tnf', '1');
     }
 }
 
